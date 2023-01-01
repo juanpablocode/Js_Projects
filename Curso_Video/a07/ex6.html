@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Easy Number Format</title>
+        <style>
+            body{
+                background-color:azure;
+                color:silver;
+                font: normal 20pt Arial;
+            }
+            p{
+                color: skyblue;
+            }
+        </style>
+    </head>
+    <body>
+        <hr>
+            <h1>Easy Number Format</h1>
+            <p>Formata números para moeda local ou estrangeira.</p>
+        <hr>
+        <script>
+            var v1 = Number(window.prompt('Digite um valor:'))
+            document.write('Formatado em Real(BRL)'+ v1.toLocaleString('pt-br', {style: 'currency', currency:'BRL'}))
+            document.write('<br>Formatado em Dolar(EUA)'+ v1.toLocaleString('pt-br', {style: 'currency', currency: 'USD'}))
+            document.write('<br>Formatado em Euro(Alemanha)'+ v1.toLocaleString('pt-br', {style: 'currency', currency: 'EUR'}))
+        </script>
+    </body>
+</html>

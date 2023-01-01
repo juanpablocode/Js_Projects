@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Easy Concat</title>
+        <style>
+            body{
+                background-color:azure;
+                color:black;
+                font: normal 20pt Arial;
+            }
+            p{
+                color:blue;
+            }
+        </style>
+    </head>
+    <body>
+        <hr>
+            <h1>Concatenação</h1>
+            <p>Juntar strings por meio de "+"</p>
+        <hr>
+        <script>
+            var nome = window.prompt('Digite seu Nome')
+            var idade = window.prompt('Digite Sua Idade:')
+            var nota = window.prompt('Digite a Sua Nota em QTS:')
+            var escola = window.prompt('Digite o Nome da Sua Escola:')
+            //window.alert(nome+' com '+idade+' de idade, tirou a nota '+nota+' na escola '+escola) sem TemplateString
+            window.alert(`${nome} com a idade ${idade} tirou a nota em QTS ${nota} na escola ${escola}`)
+            //Uso de apostrofo
+        </script>
+    </body>
+</html>

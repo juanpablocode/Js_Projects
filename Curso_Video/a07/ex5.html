@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Easy String</title>
+        <style>
+            body{
+                background-color:azure;
+                color:black;
+                font: normal 18pt Arial;
+            }
+            p{
+                color:burlywood;
+            }
+        </style>
+    </head>
+    <body>
+        <hr>
+        <h1>Easy String</h1>
+        <p>Compara e conta caracteres de uma String</p>
+        <hr>
+        <script>
+            var nome = window.prompt('Digite o Seu Nome:')
+            document.write(`Olá <strong>${nome}</strong>! Seu Nome tem ${nome.length} caracteres de tamanho<br>`)
+            document.write(`Seu Nome em letras maiúsculas fica assim: ${nome.toUpperCase()}<br>`)
+            document.write(`Seu Nome em letras minúsculas fica assim: ${nome.toLowerCase()}`)
+        </script>
+    </body>
+</html>
