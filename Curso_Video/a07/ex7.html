@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Easy Calc+</title>
+        <style>
+            body{
+                background-color:azure;
+                color:black;
+                font: normal 20pt Arial;
+            }
+            p{
+                color:blue;
+            }
+        </style>
+    </head>
+    <body>
+        <hr>
+        <h1>Easy Calc+</h1>
+        <p>Calculadora com adição de Mais Operadores!</p>
+        <hr>
+        <script>
+            //var v1 = Number(window.prompt('Digite o Primeiro Numero:'))
+            //var op = window.prompt('Digite Qual a operação:\n+\n-\nx\n/')
+            //var v2 = Number(window.prompt('Digite o Segundo valor:'))
+            //var r = null
+            //window.alert(`Resposta ${v1}${op}${v2}=${r} `)
+            
+            //Operadores Aritiméticos Js
+            
+            var v1 = Number(window.prompt('Digite o Primeiro Número:'))
+            var v2 = Number(window.prompt('Digite o Segundo Número:'))
+            document.write(`A soma de ${v1} com ${v2} é ${v1+v2}<br>`)
+            document.write(`A subitração de ${v1} com ${v2} é ${v1-v2}<br>`)
+            document.write(`A multiplicação de ${v1} com ${v2} é ${v1*v2}<br>`)
+            document.write(`A divisão de ${v1} com ${v2} é ${v1/v2}<br>`)
+            document.write(`O resto da divisão de ${v1} com ${v2} é ${v1%v2}<br>`)
+            document.write(`A potenciação de ${v1} com ${v2} é ${v1**v2}`)
+        </script>
+    </body>
+</html>
