@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Condição Lógica</title>
+        <style>
+            body{
+                background-color:azure;
+                color: black;
+                font: normal 18pt Arial;
+            }
+            p{
+                font: 12pt;
+            }
+        </style>
+    </head>
+    <body>
+        <hr>
+        <h1>Easy Comparador Lógico</h1>
+        <p>Compara condições lógicas recebidas via prompt</p>
+        <hr>
+        <script>
+            var v1 = Number(window.prompt('Digite o Primeiro Numero para Comparar'))
+            var v2 = Number(window.prompt('Digite o Segundo Numero para Comparar:'))
+            document.write(`O Numero ${v1} é maior que ${v2}? Resposta [${v1>v2}]<br>`)
+            document.write(`O Numero ${v1} é menor que ${v2}? Resposta [${v1<v2}]<br>`)
+            document.write(`O Numero ${v1} é menor ou Igual a ${v2}? Reposta [${v1<=v2}]<br>`)
+            document.write(`O Numero ${v1} é maior ou Igual a ${v2}? Reposta [${v1>=v2}]<br>`)
+            document.write(`O Numero ${v1} é Igual a ${v2}? Reposta [${v1 == v2}]<br>`)
+            document.write(`O Numero ${v1} é diferente de ${v2}? Reposta [${v1 != v2}]`)
+        </script>
+    </body>
+</html>
