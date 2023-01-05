@@ -1,0 +1,132 @@
+<!DOTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Easy DOM Example</title>
+        <style>
+            body{
+                background-color:azure;
+                color:back;
+                font: normal 18pt Arial;
+            }
+            section{
+                background-color:aqua;
+            }
+            ol{
+                background-color: royalblue;
+                border-radius: 25pt;
+            }
+            .child {
+                background-color:darkslateblue
+            }
+            p{
+                color:darkgray;
+            }
+            .index {
+                color:black;
+                font-weight: bold;
+                /*background-color:yellow*/
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+        </header>
+        <section>
+            <hr>
+            <h1>Easy Exemplo de DOM</h1>
+            <h2>O que é <strong>DOM</strong>?</h2>
+            
+            <p>Dom é uma Organização que visa organizar os elementos, atributos e values das paginas webs html, de div pais a divs filhos e etc</p>
+            <p>A organização do Dom é bem tranquila, sendo nesta seguinte ordem da Árvore <strong >DOM</strong>:</p>
+            <p>Existe conteúdo Display NONE</p>
+            <hr>
+        </section>
+        <!--
+        <ol type="I">
+            <li><strong>Window;</strong>
+                <p>Objeto Pai Que contem os Objetos Sucessores</p>
+                <ol class="child" type="I">
+                    <li>
+                        <p class="index">Location</p>
+                        <p>Objeto que armazena a URL do site</p>
+                    </li>
+                    <li>
+                        <strong>Document</strong>
+                        <p>A Janela onde fica o site</p>
+                        <ol type="I">
+                            <li>
+                                <p class="index">Html</p>
+                                <p>O elemento **HTML <html> **(ou HTML root element) representa a raiz de um HTML ou XHTML documento. Todos os outros elementos devem ser descendentes desse elemento, parent de body e head</p>
+                                <ol class="child" type="i">
+                                    <li>
+                                        <p class="index">Body</p>
+                                        <p>representa o conteúdo de um documento HTML. è permitido apenas um &lt;body&gt; por documento, child de html</p>
+                                        <ol type="i">
+                                            <li>
+                                                <p class="index">script</p>
+                                                <p>O elemento HTML &lt;script&gt; é usado para incluir ou referenciar um script executável.
+
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p class="index">p</p>
+                                                <p>representa um parágrafo. Em mídias visuais, parágrafos são representados como blocos indentados de texto com a primeira letra avançada e separados por linhas em branco. Já em HTML, parágrafos são usados para agrupar conteúdos relacionados de qualquer tipo, como imagens e campos de um formulário.</p>
+                                                <ol class="child" type="I">
+                                                    <li>
+                                                        <p class="index">Strong</p>
+                                                        <p>O elemento HTML dá ao texto uma forte importância, e é tipicamente mostrado em negrito.</p>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                            <li>
+                                                <p class="index">h1</p>
+                                                <p>Os elementos HTML &lt;h1&gt;-&lt;h6&gt; representam seis níveis de título de seção. &lt;h1&gt; é o nível de seção mais alto e &lt;h6&gt; é o mais baixo</p>
+                                            </li>
+                                            <li>
+                                                <p class="index">div</p>
+                                                <p>é um container genérico para conteúdo de fluxo, que de certa forma não representa nada. Ele pode ser utilizado para agrupar elementos para fins de estilos (usando class ou id), ou porque eles compartilham valores de atributos, como lang. Ele deve ser utilizado somente quando não tiver outro elemento de semântica (tal como &lt;article&gt; ou &lt;nav&gt;).</p>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <p class="index">Head</p>
+                                        <p>providencia informações gerais (metadados) sobre o documento, incluindo seu título e links para scripts e folhas de estilos.</p>
+                                        <ol type="1">
+                                            <li>
+                                                <p class="index">Meta</p>
+                                                <p>define qualquer informação de metadados que não podem ser definidos por outros elementos HTML</p>
+                                            </li>
+                                            <li>
+                                                <p class="index">Title</p>
+                                                <p>define o título do documento, mostrado na barra de título de um navegador ou na aba da página. Pode conter somente texto e quaisquer marcações contidas no texto não são interpretadas.</p>
+                                            </li>
+                                        </ol>
+                                    </li>
+
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <strong>History</strong>
+                        <p>Objeto que memoriza o historico de acesso de navegação do site</p>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+        -->
+        <script>
+            var t1 = window.prompt("Digite Uma Frase:")
+            window.document.write(t1)
+            window.document.write(`<br>`)
+            window.document.write(window.document.charset)
+            window.document.write(`<br>`)
+            window.document.write(window.navigator.appName)
+            window.document.write(`<br>`)
+            window.document.write(window.document.URL)
+        </script>
+    </body>
+</html>

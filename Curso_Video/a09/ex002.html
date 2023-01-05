@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width">
+        <title>Easy Select DOM</title>
+        <style>
+            body{
+                background-color:azure;
+                height: 100%;
+                width: 100%;
+                color:black;
+                font:normal 18pt sans-serif;
+            }
+            section{
+                background-color:gray;
+            }
+            li{
+                background-color: aqua;
+                border-radius: 5px;
+                font-weight:bold;
+                width: 50%;
+            }
+            li#clas {
+                background-color: yellow;
+            }
+            .mark{
+                background-color: blue;
+            }
+            .id{
+                background-color:green;
+            }
+            .no{
+                background-color:yellowgreen;
+            }
+            .sel{
+                background-color: red;
+            }
+            p{
+                color:darkgray;
+                font-weight: normal;
+                overflow-wrap:break-word;
+            }
+            a{
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <hr>
+            <h1>Seletores DOM</h1>
+            <p>Funcionam como <u>buscadores de itens</u>, <strong>values</strong> da página</p>
+            <hr>
+        </header>
+        <section>
+            <h2>Seletores</h2>
+            <p>São Diversos os <u>seletores de objetos</u> <strong>DOM</strong></p>
+            <ol type="1">
+                <li>Por Marca
+                    <p>getElementsByTagName()</p>
+                    <p>O método getElementsByTagName da interface Document retorna um HTMLCollection de elementos com o nome da tag fornecido. O documento completo é pesquisado, incluindo o nó raiz. A HTMLCollection retornada é ao vivo, o que significa que ela se atualiza automaticamente para permanecer em sincronia com a árvore DOM sem ter que chamar document.getElementsByTagName () novamente.</p>
+                </li>
+                <li class="mark">Por ID
+                    <p>getElementById()</p>
+                    <p>Retorna a referência do elemento através do seu ID</p>
+                </li>
+
+                <li class="id">Por Nome
+                    <p>getElementsByName()</p>
+                    <p>O método**getElementsByName()** do objeto Document retorna uma coleção de elementos NodeList com um dado name (en-US) no documento.</p>
+                </li>
+                <li id="clas">Por Classe
+                    <p>getElementsByClassName() </p>
+                    <p>Retorna um vetor de objetos com todos os elementos filhos que possuem o nome da classe dada. Quando invocado no objeto document, o documento é examinado por completo, incluindo o nó raiz. Você também pode invocar getElementsByClassName() em qualquer elemento; isso retornaria somente elementos que são descendentes do nó raiz especificado com o nome da classe.</p>
+                </li>
+                <li class="sel">Por Seletor
+                    <p>querySelector()</p>
+                    <p>Retorna o primeiro elemento dentro do documento (usando ordenação em profundidade, pré-ordenada e transversal dos nós do documento) que corresponde ao grupo especificado de seletores.</p>
+                </li>
+            </ol>
+            <hr>
+        </section>
+        <script>
+            var x = document.getElementsByClassName('id')[0]
+            var b1 = window.document.body
+            var v1 = window.document.getElementsByTagName('p')[0]
+            var v2 = window.document.getElementsByTagName('p')[1]
+            var v3 = window.document.getElementsByTagName('header')[0]
+            var v4 = window.document.querySelector('li#clas')
+            var v5 = document.querySelector('li.sel')
+            window.document.write('<a>Texto da 1° div P: </a>',v1.innerText)
+            window.document.write('<br>')
+            window.document.write('<a>Texto da 2° div P: </a>', v2.innerHTML)
+            window.document.write('<br>')
+            window.document.write('<a>Texto da Section: </a>', v3.innerText)
+            window.document.write('<br>')
+            window,document.write('<a>Texto do li class=id: </a>', x.innerText)
+            window.document.write('<br>')
+            window.document.write('<a>Texto da li id=clas</a>', v4.innerText)
+            document.write('<br>')
+            document.write('<a>Texto do li class=sel</a>', v5.innerText)
+            console.log(document.getElementsByClassName('id')[0])
+            v1.style.color = 'green'
+            v2.style.color = 'purple'
+            b1.style.backgroundColor = 'cyan'
+            
+        </script>
+    </body>
+</html>
