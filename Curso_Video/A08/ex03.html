@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Easy AgeV</title>
+        <style>
+            body{
+                background-color:azure;
+                color:black;
+                font: normal 20pt Arial;
+            }
+            p{
+                color:blue;
+            }
+        </style>
+    </head>
+    <body>
+        <hr>
+        <h1>Easy AgeV</h1>
+        <p>Verifica se a idade do Usuário é maior de 18 anos</p>
+        <hr>
+        <script>
+            var idade = Number(window.prompt('Digite Sua Idade para Continuar:'))
+            idade > 18 ? document.write(`Você é maior de 18 e sua idade é ${idade}`) : document.write(`Você não é maior de 18 anos e sua idade é ${idade}`)
+        </script>
+    </body>
+</html>
